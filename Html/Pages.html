@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../images/titleicon.png">
+  <link rel="stylesheet" href="../css/Pages.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 1st Start -->
+  <!-- Header Section -->
+  <div class="site-header">
+    <!-- Message Display: This element shows the welcoming message or promotional text -->
+    <span class="site-header__msg" style="flex-shrink: 0;">Welcome to our online Store</span>
+    <!-- Controls Section: Contains 
+      1)language selection dropdown,
+      2)divider, and 
+      3)login/register options -->
+    <div class="site-header__controls">
+      <!-- Language Dropdown: Allows the user to select the language of the website -->
+      <select class="site-header__langdropdown">
+        <option>English</option>
+        <option>French</option>
+        <option>Japnese</option>
+      </select>
+      <!-- Divider: 
+        This visually separates the language dropdown from the login/register option -->
+      <div class="site-header__divider"></div>
+      <!-- Login/Register Option: 
+        This section provides options for the user to login or register -->
+      <a href="#" class="site-header__auth">Login or Register</a>
+    </div>
+  </div>
+  <!--End of the Header Section-->
+  <!-- 1st end -->
+
+  <!-- 2nd start -->
+  <!-- Main container for header-->
+  <div class="header-container" id="home">
+    <!-- Logo Section -->
+     <a href="../Html/index.html">
+    <img class="header_logo" src="../images/Mainlogo.png" alt="title_logo">
+  </a>
+    <!-- Search bar container with dropdown, 
+          input, and
+          button -->
+    <div class="search-bar">
+      <!-- Dropdown for selecting category 
+       (e.g., accessories, clothing, etc.) -->
+      <select class="search-bar__dropdown search-bar-element" name="accessories">
+        <option>accessories</option>
+        <option>clothing</option>
+        <option>teddybear</option>
+        <option>dress</option>
+        <option>new arrivals</option>
+        <option>storage</option>
+      </select>
+      <!-- Divider between dropdown and search input -->
+      <div class="header__divider1"></div>
+      <!-- Search input field for user to type keywords -->
+      <input class="search-bar__input search-bar-element" type="text" placeholder="Search here">
+      <!-- Search button with magnifying glass icon -->
+      <button class="search-bar__button search-bar-element">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+    <!-- Icon group (cart, user, menu) -->
+    <div class="icon-group">
+      <!-- Cart icon with link to the cart page -->
+      <a href="your-page-url-1 url">
+        <i class="fa-solid fa-cart-shopping" id="icon1">
+          <div class="icon-group__icon-square1"></div>
+        </i>
+      </a>
+      <!-- User icon with link to user profile -->
+      <a href="#">
+        <i class="fa-solid fa-user" id="icon2">
+          <div class="icon-group__icon-square2"></div>
+        </i>
+      </a>
+      <!-- Menu icon with link to a menu page -->
+      <a href="your-page-url-3 url">
+        <i class="fa fa-bars" aria-hidden="true" id="icon3">
+          <div class="icon-group__icon-square3"></div>
+        </i>
+      </a>
+    </div>
+  </div>
+  <!-- 2nd end  -->
+<!-- 3rd start -->
+  <!-- 3)navigation bar -->
+  <!-- Main Navigation Bar -->
+  <ul class="main-nav">
+    <!-- All Categories Dropdown Menu -->
+    <li class="category-menu">
+      <!-- Icon for the "All Categories" menu item -->
+      <i class="fa fa-bars" aria-hidden="true" style="padding-right:0.3rem;"></i>
+      <!-- Text for the "All Categories" link -->
+      All Categories
+      <!-- Dropdown menu for the categories -->
+      <ul class="category-dropdown dropdown">
+        <li>New Arrivals</li>
+        <hr class="dropdown-divider"> <!-- Divider between menu items -->
+        <li>Hot Sale</li>
+        <hr class="dropdown-divider">
+        <li>Accessories</li>
+        <hr class="dropdown-divider">
+        <li>Clothing</li>
+        <hr class="dropdown-divider">
+        <li>Backpack</li>
+        <hr class="dropdown-divider">
+        <li>Toys</li>
+        <hr class="dropdown-divider">
+        <li>Car Seat</li>
+        <hr class="dropdown-divider">
+        <li>Jewellery</li>
+      </ul>
+      <!-- Inner box for additional styling or future content -->
+      <div class="category-inner-box">
+      </div>
+    </li>
+
+    <!-- Home Dropdown Menu -->
+    <li class="nav-item">
+      <!-- Link for "Home" with an arrow icon -->
+      <a href="#">Home
+        <i style="font-size:1rem" class="fa">&#xf107;</i>
+      </a>
+      <!-- Dropdown menu for home options -->
+      <ul class="home-dropdown dropdown">
+        <li><a href="../Html/index.html">Home-1</a></li>
+        <li>Home-2</li>
+        <li>Home-3</li>
+      </ul>
+    </li>
+
+    <!-- Shop Dropdown Menu -->
+    <li class="nav-item">
+      <!-- Link for "Shop" with an arrow icon -->
+      <a href="#">Shop
+        <i style="font-size:1rem" class="fa">&#xf107;</i>
+      </a>
+      <!-- Dropdown menu for shop options -->
+      <ul class="shop-dropdown dropdown">
+        <li>Grid FullWidth</li>
+        <li><a href="../Html/Products.html">Grid LeftSidebar</a></li>
+        <li>Grid BannerSlider</li>
+        <li>List</li>
+      </ul>
+    </li>
+
+    <!-- Pages Menu with Mega Menu -->
+    <li class="pages-menu">
+      <!-- Link for "Pages" with an arrow icon -->
+      <a href="#">Pages
+        <i style="font-size:1rem;" class="fa">&#xf107;</i>
+      </a>
+      <!-- Mega Menu for pages -->
+      <div class="mega-menu">
+        <!-- First column of the mega menu -->
+        <ul class="mega-menu-column">
+          <h4>Shopping Cart</h4>
+          <hr class="section-divider"> <!-- Section divider for separation -->
+          <li> Checkout</li>
+          <li>Contact us</li>
+          <li>404</li>
+          <li>Login/Register</li>
+        </ul>
+        <!-- Second column of the mega menu -->
+        <ul class="mega-menu-column1">
+          <h4>Product</h4>
+          <hr class="section-divider">
+          <li><a href="Pages.html">Product Fullwidth</a></li>
+          <li> Product left sidebar</li>
+          <li>Product right sidebar</li>
+        </ul>
+        <!-- Image in the mega menu (for example, a toy image) -->
+        <img src="../images/ToyPicture.png" alt="Toy Image">
+      </div>
+    </li>
+
+    <!-- Blogs Dropdown Menu -->
+    <li class="nav-item">
+      <!-- Link for "Blogs" with an arrow icon -->
+      <a href="#">Blogs
+        <i style="font-size:1rem" class="fa">&#xf107;</i>
+      </a>
+      <!-- Dropdown menu for blogs options -->
+      <ul class="blogs-dropdown dropdown">
+        <li><a href="Blogs.html">Blogs Style</a></li>
+        <li>Post Layout</li>
+      </ul>
+    </li>
+
+    <!-- About Section -->
+    <li class="nav-item"><a href="About.html">About</a></li>
+  </ul>
+  <div class="part1">
+    <span class="item-1 item"><a href="index.html" target="_blank">Home</a></span>
+    <span class="item-2 item"><i class="fa-solid fa-angles-right"></i></span>
+    <span class="item-3 item"><a href="index.html" target="_blank">Clothing</a></span>
+    <span class="item-2 item"><i class="fa-solid fa-angles-right"></i></span>
+    <span class="item-3 item">Eclipse Pendant Light</span>
+  </div>
+  <div class="product_section">
+    <div class="prod">
+      <div class="imgsection">
+        <img src="../images/BuzzlightyearPic.png" alt="sample">
+        <a href="#">
+          <i class="fa-solid fa-magnifying-glass" id="magnifyingglass1"></i>
+        </a>
+      </div>
+    </div>
+    <div class="details">
+      <h3>Eclipse Pendant Light</h3>
+      <div class="Ratingssec">
+        <img src="../images/Ratings.png" alt="Ratings">
+        <span> (3)</span>
+      </div>
+      <span class="available">Availablity:<span class="available_status">In Stock</span></span>
+      <p class="price" style="font-weight:bold;margin-top:15px;margin-bottom:15px;">$45</p>
+      <ul>
+        <li>Vestibulum tortor quam</li>
+        <li>Imported</li>
+        <li>Art.No. 06-7680</li>
+      </ul>
+      <div class="color">
+        <h4 style="margin-top: 24px;font-size:0.9rem">Color:</h4>
+        <div class="colorslist">
+          <a href="#" class="colors_palette-1 clrs"></a>
+          <a href="#" class="colors_palette-2 clrs"></a>
+          <a href="#" class="colors_palette-3 clrs"></a>
+          <a href="#" class="colors_palette-4 clrs"></a>
+        </div>
+      </div>
+      <div class="size">
+        <h4 style="margin-top: 24px;font-size:1rem">Size:</h4>
+        <div class="size_body">
+          <a href="#" class="sizebox">XS</a>
+          <a href="#" class="sizebox">S</a>
+          <a href="#" class="sizebox">M</a>
+          <a href="#" class="sizebox">L</a>
+          <a href="#" class="sizebox">XL</a>
+          <a href="#" class="sizebox">XXL</a>
+        </div>
+      </div>
+      <div class="links">
+        <a class="link1 link" href="#">
+          <i class="fa-regular fa-heart"></i>
+          <span>Add to Wishlist</span>
+        </a>
+        <a class="link2 link" href="#">
+          <i class="fa-solid fa-tape"></i>
+          <span>View Size Chart</span>
+        </a>
+      </div>
+      <div class="counter_cart">
+        <div class="counter">
+          <button id="Decrement">-</button>
+          <h5 id="display">0</h5>
+          <button id="Increment">+</button>
+        </div>
+        <button class="AddtoCart">Add To Cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="product_samples">
+    <i class="fa fa-angle-left" id="angleleft" aria-hidden="true"></i>
+    <img src="../images/cutecattoy.webp" class="prdtimg1" alt="">
+    <img src="../images/ToyPicture.png" class="prdtimg2" alt="">
+    <img src="../images/boy.png" class="prdtimg3" alt="">
+    <img src="../images/kidsplayingballoons.png" class="prdtimg3" alt="">
+    <img src="../images/ToyPicture.png" class="prdtimg3" alt="">
+    <img src="../images/ToyPicture.png" class="prdtimg3" alt="">
+    <i class="fa fa-angle-right" id="angleright" aria-hidden="true"></i>
+  </div>
+    <div class="description">
+          <div class="decript_title" id="descript">
+            <div class="dec1" target="_parent">
+              <a href="#" onclick="return false;">Description</a>
+              <div class="line1 line"></div>
+            </div>
+            <div class="dec2" target="_parent">
+              <a href="#" onclick="return false;">Information</a>
+              <div class="line2 line"></div>
+              </div>
+            <div class="dec3" target="_parent">
+              <a href="#" onclick="return false;">Review</a>
+              <div class="line3 line"></div>
+            </div>
+          </div>
+          <hr>
+    </div>
+    <div class="product_grid">
+      <center>
+        <p style="font-size:1.2rem; font-weight: bolder;margin-bottom:10px;">YOU MAY ALSO LIKE</p>
+        <div class="line4">
+        </div>
+      </center>
+      <div class="products">
+        <div class="box1 box">
+          <div class="circle0" style="font-size: 14px;">
+            New
+            <div class="sidemenu">
+              <div class="button-1">
+                <a href="#home">
+                  <div class="instagram">
+                  </div>
+                </a>
+              </div>
+              <div class="button-1">
+                <a href="#home">
+                  <div class="whatsapp">
+                  </div>
+                </a>
+              </div>
+              <div class="button-1">
+                <a href="#home">
+                  <div class="search">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <img src="../images/Tshirt.png" alt="shirt">
+          <div class="circle">
+            <div class="circle1"><h4 id="days-1">05</h4> Days</div>
+            <div class="circle2" style="font-size:17px;"><h4 id="hrs-1">12</h4> Hrs</div>
+            <div class="circle3"><h4 id="mins-1">59</h4> Mins</div>
+            <div class="circle4"><h4 id="secs-1">00 </h4>Secs</div>
+          </div>
+          <div class="productdetails">
+            <h5>Summer T-Shirt Boy</h5>
+            <div class="Ratingssec">
+              <img src="../images/Ratings.png" alt="Ratings">
+              <span> (3)</span>
+            </div>
+            <div class="pricevalues">
+              <del style="color:grey;">$65</del>
+              <span style="color:skyblue;">$45</span>
+            </div>
+          </div>
+        </div>
+        <div class="box1 box">
+          <div class="circle0" style="font-size: 14px;">
+            New
+            <div class="sidemenu">
+              <div class="button-1">
+                <a href="#home">
+                  <div class="instagram">
+                  </div>
+                </a>
+              </div>
+              <div class="button-1">
+                <a href="#home">
+                  <div class="whatsapp">
+                  </div>
+                </a>
+              </div>
+              <div class="button-1">
+                <a href="#home">
+                  <div class="search">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <img src="../images/Tshirt.png" alt="shirt">
+          <div class="circle">
+            <div class="circle1"><h4 id="days-2">05</h4> Days</div>
+            <div class="circle2" style="font-size:17px;"><h4 id="hrs-2">12</h4> Hrs</div>
+            <div class="circle3"><h4 id="mins-2">59</h4> Mins</div>
+            <div class="circle4"><h4 id="secs-2">00 </h4>Secs</div>
+          </div>
+          <div class="productdetails">
+            <h5>Summer T-Shirt Boy</h5>
+            <div class="Ratingssec">
+              <img src="../images/Ratings.png" alt="Ratings">
+              <span> (3)</span>
+            </div>
+            <div class="pricevalues">
+              <del style="color:grey;">$65</del>
+              <span style="color:skyblue;">$45</span>
+            </div>
+          </div>
+        </div>
+        <div class="box1 box">
+          <div class="circle0" style="font-size: 14px;">
+            New
+            <div class="sidemenu">
+              <div class="button-1">
+    
+                <a href="#home">
+                  <div class="instagram">
+                  </div>
+                </a>
+              </div>
+              <div class="button-1">
+                <a href="#home">
+                  <div class="whatsapp">
+                  </div>
+                </a>
+              </div>
+              <div class="button-1">
+                <a href="#home">
+                  <div class="search">
+    
+                  </div>
+                </a>
+              </div>
+    
+            </div>
+          </div>
+          <img src="../images/Tshirt.png" alt="shirt">
+          <div class="circle">
+            <div class="circle1"><h4 id="days-3">05</h4> Days</div>
+            <div class="circle2" style="font-size:17px;"><h4 id="hrs-3">12</h4> Hrs</div>
+            <div class="circle3"><h4 id="mins-3">59</h4> Mins</div>
+            <div class="circle4"><h4 id="secs-3">00 </h4>Secs</div>
+          </div>
+          <div class="productdetails">
+            <h5>Summer T-Shirt Boy</h5>
+            <div class="Ratingssec">
+              <img src="../images/Ratings.png" alt="Ratings">
+              <span> (3)</span>
+            </div>
+            <div class="pricevalues">
+              <del style="color:grey;">$65</del>
+              <span style="color:skyblue;">$45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <footer>
+    <div class="footer_part1">
+      <div class="prt1">
+        <img class="header_logo" src="../images/Mainlogo.png" alt="title_logo">
+        <p style="text-indent: 10px;"><span>c</span>orem ipsum dolor sit amet litam consectetur adipiscing elit,
+          facilisi vivamus proin lit laoreet phasel alilus porttitor inter,
+          facilisis condiment tarime egestas rhoncus dapibus iaculis alemir.
+          Bibendum commodo risus.</p>
+      </div>
+      <ul class="prt2">
+          <h3 style="color:initial;font-family: Baloo,sans-serif;">QUICK MENU</h3>
+        <li><i class="fab fa-reddit"></i> New arrivals</li>
+        <li><i class="fab fa-reddit"></i> Life style</li>
+        <li><i class="fab fa-reddit"></i> Clothing</li>
+        <li><i class="fab fa-reddit"></i> Backpack</li>
+        <li><i class="fab fa-reddit"></i> Toys</li>
+      </ul>
+      <ul class="prt2">
+          <h3 style="color:initial;font-family: Baloo,sans-serif;">QUICK MENU</h3>
+        <li><i class="fab fa-reddit"></i> New arrivals</li>
+        <li><i class="fab fa-reddit"></i> Life style</li>
+        <li><i class="fab fa-reddit"></i> Clothing</li>
+        <li><i class="fab fa-reddit"></i> Backpack</li>
+        <li><i class="fab fa-reddit"></i> Toys</li>
+      </ul>
+      <div class="prt3">
+        <h3 style="color:initial;font-family: Baloo,sans-serif;margin-bottom: 20px;">NEWSLETTER</h3>
+        <span>Get notified of new products, limited releases, and more.</span>
+        <input type="text" placeholder="Your email letter">
+        <button>SUBSCRIBE</button>
+        <div class="icon-group">
+          <!-- Cart icon with link to the cart page -->
+          <a href="your-page-url-1 url">
+            <i class="fa-solid fa-cart-shopping" id="icon1">
+              <div class="icon-group__icon-square1"></div>
+            </i>
+          </a>
+          <!-- User icon with link to user profile -->
+          <a href="your-page-url-2 url">
+            <i class="fa-solid fa-user" id="icon2">
+              <div class="icon-group__icon-square2"></div>
+            </i>
+          </a>
+          <!-- Menu icon with link to a menu page -->
+          <a href="your-page-url-3 url">
+            <i class="fa fa-bars" aria-hidden="true" id="icon3">
+              <div class="icon-group__icon-square3"></div>
+            </i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr class="last_hr">
+    <div class="last">
+
+      <span>Copyright © 2020 Moorabi . All rights reserved</span>
+      <div class="payment_logo">
+        <img src="../images/mastercard-logo.png" class="payment_logo-1 lgo">
+        <img src="../images/paypal_PNG9.png" class="payment_logo-2 lgo">
+        <img src="../images/Visa-Symbol.png" class="payment_logo-3 lgo">
+      </div>
+    </div>
+  </footer>
+  <!-- <script src="../js/index.js"></script> -->
+  <script type="module" src="../js/Pages.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1062 @@
+/* ||Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+body {
+  background-color: papayawhip;
+  /* min-width: 1536px; */
+}
+
+/* variables */
+:root {
+  /* color */
+  --primary-color: #DE3C4B;
+  --icon-hover-color: #FFEB3B;
+  --icon-hover-color1: #454ADE;
+  --font-color: whitesmoke;
+  --font-color1: black;
+  
+  /* box-shadow */
+  --shadow-effect: 0 0 9px black;
+  --shadow-effect_small: 0 0 9px red;
+  --shadow-effect_mid: 10px 10px 9px red;
+  --shadow-effect_hover1: 0 0 19px rgb(43, 0, 255), 0 10px 19px rgb(0, 255, 98);
+  --shadow-effect_hover2: 0 0 10px blue, 0 0 10px rgb(0, 255, 64);
+}
+
+/* 1 - Header Section */
+.site-header {
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--font-color);
+  min-height: 50px;
+  padding-left: 13%;
+  padding-right: 13%;
+  gap: 60%;
+  justify-content: space-between;
+  /* padding: 0 180px; */
+  /* border:3px solid rgb(255, 247, 0); */
+}
+.site-header :is(:nth-child(1), :nth-child(2)) {
+  flex-shrink: 0;
+}
+.site-header__controls {
+  display: flex;
+  gap: 10px;
+}
+/* Language Dropdown */
+.site-header__langdropdown {
+  background-color: var(--primary-color);
+  color: inherit;
+  font-size: inherit;
+  border: none;
+  outline: none;
+}
+
+/* Line Divider */
+.site-header__divider,
+.header__divider1 {
+  height: 20px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: white;
+}
+
+.site-header__auth {
+  /* flex-shrink: 0; */
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-header__auth:hover {
+  background-color: var(--icon-hover-color);
+  color: var(--font-color1);
+  border-radius: 5px;
+}
+
+/* 2 - Header container styling */
+.header-container {
+  min-width: 100%;
+  height: 170px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Styling for the logo in the header */
+.header_logo {
+  flex-shrink: 0;
+  min-width: 160px;
+  height: 60px;
+}
+
+/* Removing border and outline for elements with class .search-bar-element */
+.search-bar-element {
+  border: none;
+  outline: none;
+  padding-left:1.3rem;
+}
+
+/* Styling for the search bar container */
+.search-bar {
+  flex-shrink: 0;
+  width: 380px;
+  height: 50px;
+  border: 2px solid var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Dropdown menu inside the search bar */
+.search-bar__dropdown {
+  flex-shrink: 0;
+  color: rgb(123, 122, 122);
+  text-transform: capitalize;
+  text-align: center;
+  width:140px;
+  cursor: pointer;
+}
+.search-bar__dropdown option{text-align: initial;}
+
+/* Divider between search bar elements (like the dropdown and button) */
+.header__divider1 {
+  border-left: 1px solid var(--primary-color);
+  height: 47px;
+}
+.fa-solid{
+  color:black;
+  font-size:1rem;
+}
+.fa-magnifying-glass
+{
+  color:white;
+}
+/* Styling for the button in the search bar */
+.search-bar__button {
+  width: 15%;
+  padding:1em;
+  background-color: var(--primary-color);
+}
+
+/* Container for the icon group in the header */
+.icon-group {
+  flex-shrink: 0;
+  width: 195px;
+  height: 50px;
+  display: flex;
+  gap: 10px;
+}
+/* Common styling for each icon (icon1, icon2, icon3) */
+#icon1, #icon2, #icon3 {
+   flex-shrink: 0;
+  display: grid;
+  place-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  color: var(--font-color);
+  border: 2px solid black;
+  border-radius: 5px;
+  position: relative;
+}
+#icon3{text-align: center;}
+
+/* Styling for the inner square shapes within the icons */
+.icon-group__icon-square1,
+.icon-group__icon-square2,
+.icon-group__icon-square3 {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: 1;
+  border: 2px dashed black;
+}
+
+/* Hover effects for the icons */
+#icon1:hover, #icon2:hover, #icon3:hover {
+  background-color: var(--icon-hover-color1);
+  color: var(--font-color);
+}
+
+/* 3rd start */
+/* Main Navigation Bar */
+
+.main-nav {
+ 
+  height: 60px; /* Height of the main navigation bar */
+  background-color: var(--primary-color); /* Background color of the main navigation */
+  color: var(--font-color); /* Font color for the navigation items */
+  position: relative;
+}
+
+/* Category Menu Styles */
+.category-menu {
+  width:15%;
+  height:60px;
+  position: relative;
+  border: 2px solid black; /* Border for the category menu */
+  background-color: #de0f24; /* Background color for the category menu */
+  color: var(--font-color); /* Font color for the category menu */
+  border-radius: 7px; /* Rounded corners for the category menu */
+  font-size: 90%;
+}
+
+/* Inner box of the category menu (for additional styling or layout) */
+.category-inner-box {
+  width: 95%; /* Width of the inner box */
+  height: 94%; /* Height of the inner box */
+  border: 2px dashed black; /* Dashed border for the inner box */
+  position: absolute; /* Positioning it relative to the parent */
+  top:2%;
+  right: 3%; /* Right alignment inside the parent */
+  left: 3%; /* Left alignment inside the parent */
+  bottom: 4%; /* Bottom alignment inside the parent */
+}
+
+/* Main Navigation Links */
+.main-nav a {
+  text-decoration: none; /* Remove underline from links */
+  display: inline-block;/*Ensure the links behave like inline elements*/
+  color: var(--font-color); /* Set font color for the links */
+}
+
+/* Common Styles for All Navigation Items */
+.category-menu, .nav-item, .pages-menu {
+  padding: 1.2rem; /* Padding around each item */
+  display: inline-block; /*Display the items inline*/
+  list-style: none; /* Remove bullet points from the list */
+  position: relative; /* Set position relative for positioning dropdowns */
+  left: 15%; /* Position the items with a left margin */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  font-size: 1rem; /* Set font size */
+  font-weight: bold; /* Set font weight to bold */
+  /* position: relative; */
+}
+/* Dropdown Menu and Mega Menu Styles */
+.dropdown, .mega-menu {
+  display: none; /* Initially hide the dropdown and mega menu */
+  position: absolute; /* Positioning dropdown/mega menu relative to its parent */
+  top: 45px; /* Position the menu right below the main navigation bar */
+  box-shadow: var(--shadow-effect); /* Apply shadow effect for better visuals */
+  border-radius: 7px; /* Rounded corners */
+  color: rgb(123, 122, 122); /* Text color inside the dropdown/mega menu */
+}
+
+/* Heading Styles inside Mega Menu */
+.mega-menu h4 {
+  font-weight: bold; /* Make headings bold */
+  color: var(--font-color1); /* Font color for mega menu headings */
+}
+
+/* Dropdown List Items */
+.dropdown li {
+  list-style: none; /* Remove list bullets */
+  padding: 1rem; /* Padding around each list item */
+}
+
+/* Styling for the "Category" dropdown */
+.category-dropdown {
+  left: 20px; /* Position the category dropdown */
+  width: 200px; /* Set the width of the category dropdown */
+  right: 270px; /* Right position inside the navigation */
+}
+
+/* Divider Styling inside Dropdowns */
+.dropdown-divider {
+  margin-left: 10px; /* Left margin for divider */
+  margin-right: 10px; /* Right margin for divider */
+  width: 175px; /* Width of the divider */
+}
+
+/* Styling for Home Dropdown */
+.home-dropdown {
+  left: 10px; /* Left position inside the menu */
+  width: 200px; /* Width of the dropdown */
+}
+
+/* Styling for Shop Dropdown */
+.shop-dropdown {
+  width: 250px; /* Set the width for the shop dropdown */
+  left: 10px; /* Left position inside the menu */
+}
+.dropdown li a,.mega-menu-column1 a{
+  text-decoration: none;
+  color:grey;
+}
+.dropdown li a:hover{
+  background-color: grey;
+  color:white;
+}
+/* Pages Menu Styling */
+.pages-menu {
+  width: 124px; /* Set width for the pages menu */
+  height: 70px; /* Height for the pages menu */
+}
+
+/* Mega Menu Specific Styles */
+.mega-menu {
+  display: none; /* Hide mega menu initially */
+  font-size: 1rem; /* Set font size */
+  position: relative; /* Position relative to its container */
+  right: 500px; /* Adjust the right position of mega menu */
+  width: 800px; /* Set width for mega menu */
+  height: 300px; /* Set height for mega menu */
+  top: 20px; /* Offset the mega menu from the top */
+  box-shadow: var(--shadow-effect); /* Shadow effect */
+  border-radius: 7px; /* Rounded corners */
+}
+
+/* Mega Menu First Column */
+.mega-menu-column {
+  position: absolute; /* Absolute position */
+  line-height: 1.6rem;
+  left: 30px; /* Left position inside the mega menu */
+  top: 30px; /* Top position inside the mega menu */
+  list-style: none; /* Remove list style */
+  padding:1.7rem; /* Add padding to items */
+  color: rgb(123, 122, 122); /* Set text color */
+}
+
+/* Divider Styling inside Mega Menu */
+.section-divider {
+  border: 3px solid rgb(255, 142, 160); /* Divider border style */
+  width: 40px; /* Set width of the divider */
+}
+
+/* Mega Menu Second Column */
+.mega-menu-column1 {
+  color: rgb(123, 122, 122); /* Set text color */
+  line-height: 1.6rem;
+  list-style: none; /* Remove list style */
+  position: absolute; /* Absolute position for column */
+  left: 300px; /* Position the second column */
+  top: 30px; /* Top position inside the mega menu */
+  padding: 1.7rem; /* Add padding to items */
+}
+
+/* Image inside the Mega Menu */
+.mega-menu img {
+  position: absolute; /* Position the image absolutely */
+  width: 150px; /* Set the width for the image */
+  height: 150px; /* Set the height for the image */
+  left: 600px; /* Left position of the image */
+  top: 100px; /* Top position of the image */
+}
+
+/* Hover Effect for List Items inside Dropdown and Mega Menu */
+.dropdown li:hover, .mega-menu-column li:hover, .mega-menu-column1 li:hover {
+  background-color: grey; /* Change background color on hover */
+  color: var(--font-color1); /* Change text color on hover */
+}
+
+/* Padding for List Items and Headings inside Mega Menu */
+.mega-menu-column li, .mega-menu-column1 li, h4 {
+  padding: 5px; /* Add padding */
+}
+
+/* Blogs Dropdown Styling */
+.blogs-dropdown {
+  width: 200px; /* Set width for the blogs dropdown */
+}
+
+/* Displaying Dropdowns and Mega Menus when Hovered */
+.main-nav li:hover .category-dropdown, 
+.main-nav li:hover .home-dropdown,
+.main-nav li:hover .shop-dropdown,
+.main-nav li:hover .mega-menu .mega-menu-column,
+.main-nav li:hover .mega-menu,
+.main-nav li:hover .blogs-dropdown {
+  display: block; /* Show the menu on hover */
+  background-color: white; /* Set background color */
+  z-index: 1; /* Bring the hovered menu to the front */
+}
+/* inner body */
+.product_page
+{
+  margin-left:10%;
+  margin-right:10%;
+  display: flex;
+  gap:4%;
+}
+.part1{
+  width:80%;
+  height:70px;
+  display: flex;
+  align-items: center;
+  margin-left: 12%;
+}
+.item-1 a{
+  text-decoration: none;
+  color:grey;
+}
+.item-1 a:hover{
+  color:#DE3C4B;
+}
+/* not working
+.item-1 a :visited{
+  color:blue;
+} */
+.item{
+  flex-shrink: 0;
+  margin-left:10px;
+}
+.item-2
+{
+  color:grey;
+}
+
+.part2{
+  width: 36%;
+  /* flex-grow: 0; */
+  min-height:1900px;
+}
+.divider{
+  display: flex;
+  margin-bottom:25px;
+}
+.part2 ul{
+  color:#555555;
+  list-style: none;
+  margin-bottom:25px;
+}
+.part2 ul li{
+  margin:10px;
+}
+.priceslider span{
+  border:2px solid rgba(128, 128, 128, 0.634);
+  margin-left:20px;
+  font-size: 1.3rem;
+  padding:0.2em;
+  border-radius: 5px;
+}
+.size_body{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding:10px;
+}
+.sizebox{
+  width:60px;
+  height:27px;
+  border:2px solid rgba(128, 128, 128, 0.578);
+  text-align: center;
+  margin-left: 10px;
+  font-size:1rem;
+  padding-top:0.2em;
+  margin-bottom:10px;
+  border-radius:5px;
+  text-decoration: none;
+  color:black;
+}
+.sizebox:is(:hover,:focus){
+  cursor:pointer;
+  background-color:#DE3C4B;
+  color:white;
+}
+.colorslist{
+  width:60%;
+  margin:30px;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+  row-gap: 10px;
+}
+.clrs{
+  width:50px;
+  height:50px;
+  border:none;
+  border-radius: 6px;
+  position: relative;
+}
+.colors_palette-1{background-color:rgb(255, 255, 255);}
+.colors_palette-2{background-color:rgb(0, 0, 0);}
+.colors_palette-3{background-color:steelblue;}
+.colors_palette-4{background-color:brown}
+.colors_palette-5{background-color:darkgoldenrod;}
+.colors_palette-6{background-color:#71ED77}
+.colors_palette-7{background-color:pink;}
+.clrs::after{
+  content: '\f00c'; 
+  font-family: 'Font Awesome 6 Free'; 
+  font-size: 1.3rem;
+  font-weight: bolder; 
+  margin-right: 8px; 
+  color: rgb(255, 255, 255); 
+  position:absolute;
+  top:13px;
+  left:15px;
+  visibility: hidden;
+}
+.colors_palette-1:hover::after,.colors_palette-1:focus::after{
+  visibility: visible;
+  color:black;
+}
+.clrs:hover::after,.clrs:focus::after{
+  visibility: visible;
+}
+.taqs{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-left:22px;
+}
+.taq{
+  width:100px;
+  height:30px;
+  border:2px solid #55555566;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.8rem;
+  padding:0.5em;
+  border-radius: 6px;
+  color:#555555b9;
+  font-weight: bolder;
+
+}
+.taq:is(:hover,:focus){
+  color:black;
+}
+.subscription{
+  height:380px;
+  margin-top:30px;
+  position: relative;
+}
+.subscription::after{
+  content: url("/Html/icons8-email-100.png");
+  position: absolute;
+  z-index: 1;
+  top:90px;
+  left:80px;
+  transform: rotate(-20deg) scale(2);
+  opacity: 0.1;
+}
+.subscripitontitle{
+  width:60%;
+  margin-top: 20px;
+  margin-left:20px;
+}
+.subscription_para{
+  width: 60%;
+  margin-top: 20px;
+  margin-left:20px;
+  color:#555;
+}
+.form_elements{
+  display: flex;
+  flex-direction: column;
+  padding:20px;
+  margin-top:80px;
+}
+.form_elements input{
+  font-size: 1rem;
+  height:50px;
+  text-align: center;
+  outline: none;
+  border-radius: 6px;
+  border-color: rgba(128, 128, 128, 0.392);
+}
+.form_elements button{
+  margin-top: 10px;
+  font-size: 1.2rem;
+  padding:0.5em;
+  background-color: #DE3C4B;
+  color:white;
+  border:none;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.part3{
+  flex-basis: 100%;
+  flex-grow: 0;
+  min-height:1700px;
+}
+.part3 h3{
+  margin-top:10px;
+}
+.filter_section{
+   height:3%;
+   background-color:#F1F1F1;
+   border:1px solid rgba(128, 128, 128, 0.538);
+   margin-top:30px;
+   padding-left: 10px;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   gap:8%;
+   flex-wrap: wrap;
+}
+.fa-list{
+  /* margin-right:100%; */
+  justify-self: end;
+  color:black;
+}
+.form1 label,
+.form1 select,
+.form2 label,
+.form2 select{
+  font-size:  1rem;
+  padding:0.3em;
+  border-radius:6px;
+  color:rgb(56, 56, 56);
+}
+.box5
+{
+  width:25%;
+  height:330px;
+  margin:4%;
+  border:2px dashed rgb(231, 231, 231);
+  text-align: center;
+  transition-duration: 1s;
+}
+.box5:hover{
+  border:2px dashed red;
+  cursor: pointer;
+  transform: rotateY(360deg);
+  color:red;
+  box-shadow: var(--shadow-effect_hover2);
+}
+.box5 span{
+  font-size: 15px;
+  font-weight: bold;
+}
+.circle2_0
+{
+  position:relative;
+  width:50px;
+  height:50px;
+  border:2px solid black;
+  margin:10px;
+  border-radius:29px;
+  background-color: var(--primary-color);
+  color:var(--font-color);
+  font-size:0.6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle2_1
+{
+  position:absolute;
+  width:40px;
+  height:40px;
+  border:2px dashed black;
+  border-radius:39px;
+}
+.box5 img{
+   width:89%;
+   height:50%;
+}
+.Ratingssec1 img{
+  width: 80px;
+  height:20px;
+}
+.products
+{
+  margin:10px; 
+  display:flex;
+  flex-wrap: wrap;
+   padding: 10px;
+}
+/* footer */
+ footer{
+  background-color: papayawhip;
+ }
+ .footer_part1
+ {
+ display:flex;
+ flex-wrap: wrap;
+ }
+ .prt1
+ {
+  flex-shrink: 0;
+  width:30%;
+  min-height:260px;
+  line-height: 30px;
+  margin:40px 0;
+  margin-left:40px;
+  color:grey;
+  font-size: 1rem;
+  padding:1em;
+ }
+ .prt1 span
+ {
+  flex-shrink: 0;
+  background-color:var(--primary-color);
+  color:var(--font-color);
+  font-size:1.2rem;
+  padding:0.5em 0.5em;
+  border-radius: 60px;
+  text-align: center;   
+ }
+ .prt2{
+  flex-shrink: 0;
+  width:20%;
+  line-height: 40px;
+  min-height:260px;
+  padding:0.5rem;
+  padding-left:1rem;
+  margin:2.5rem 0;
+  list-style: none;
+  color:grey;
+ }
+ .fab
+ {
+  color:var(--primary-color);
+  font-size: larger;
+ }
+ .prt3
+ {
+  flex-shrink: 0;
+  width:26%;
+  min-height:260px;
+  padding:1rem 0;
+  padding-left: 1rem;
+  margin:2.5rem 0;
+ }
+ .prt3 span{
+  flex-shrink: 0;
+  color:grey;
+  display: block;
+  margin-bottom:2.5rem;
+ }
+ .prt3 input{
+  height:30px;
+  padding:1rem;
+  margin-bottom:0.9rem;
+  outline:none;
+  border:1px solid rgba(128, 128, 128, 0.423);
+  border-radius: 6px;
+ }
+ footer hr{
+ margin:1.2rem 1rem;
+ }
+ .last
+ {
+  flex-shrink: 0;
+  height:70px;
+  margin-left:3rem;
+  margin-right:1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color:grey;
+ }
+ .payment_logo
+ {
+  width:260px;
+  height:70px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+ }
+ .lgo{
+  flex-shrink: 0;
+    width:50px;
+    height:40px;
+ }  
+footer button {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;  
+  padding: 0.5em 1em;
+  background-color:white;
+  border-radius: 4px;
+  position:relative;
+  transition: color .5s linear;
+  overflow: hidden;
+}
+footer button::before
+{
+  content:'';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:0px;
+  right:0;
+  transform:translateX(-100%);
+  background-color:red;
+  width:100%;
+  height:100%;
+  transition: transform .5s linear;
+}
+ footer button:hover::before
+{
+  transform: translateX(0);
+  content: 'SUBSCRIBE';
+}
+footer button:hover
+{
+  cursor:pointer;
+  color: white;
+    box-shadow:var(--shadow-effect_hover2);
+}
+.nav-link{
+  /* width:30%;
+  height:50px; */
+  display:flex;
+  gap:20px;
+  justify-content: center;
+}
+.nav-link a{
+  width:40px;
+  height:40px;
+  border:1px solid rgb(160, 159, 159);
+  display:grid;
+  place-content: center;
+  text-decoration: none;
+  color:grey;
+  border-radius: 5px;
+  background-color: white;
+}
+.nav-link a:is(:hover,:focus){
+  cursor: pointer;
+  color:white;
+  background-color:#DE3C4B;
+}
+
+.sign_up
+{
+  width:300px;
+  background-color: white;
+  border: 1px solid grey;
+  z-index: 2;
+  position: absolute;
+  top:50px;
+  right:0px;
+  padding:10px;
+  line-height: 24px;
+  border-radius: 25px;
+  box-shadow: var(--shadow-effect);
+}
+.login-register
+{
+  display:flex;
+  padding:10px;
+  gap:20px;
+}
+.login-register a{
+  text-decoration: none;
+  color:grey;
+}
+.login-register:hover{
+  color:grey;
+}
+.login-register :is(a:visited){
+  color:var(--primary-color);
+}
+.textbox{
+  width:90%;
+  height:10%;
+  margin:15px 0;
+  padding:10px;
+}
+.textbox[type='checkbox']
+{
+    width:11%;
+    height:5%;
+    display:inline;
+} 
+.rememberMe{
+   color:grey;
+   font-weight: 600;
+}
+.login1{
+  width:90%;
+  height:10%;
+  font-size: 1rem;
+  padding:0.5em;
+  color:white;
+  background-color: #de0f24;
+  margin:3px;
+  margin-bottom:20px;
+  border:none;
+  border-radius:7px;
+  transition-duration: 1s;
+}
+.login1:hover
+{
+  color:papayawhip;
+  background-color: blue;
+  cursor:pointer;
+}
+.forgetpassword{
+  color:#DE3C4B;
+  font-weight: 600;
+  margin-left:15%;
+}
+.cartButton
+{
+  width:300px;
+  height:fit-content;
+  position:absolute;
+  top:54px;
+  right:3px;
+  z-index:2;
+  background-color:white;
+  border-radius:6px;
+  box-shadow: var(--shadow-effect);
+  color:initial;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.productdetails
+{
+  width:250px;
+  height:60px;
+  color:initial;
+  text-align: center;
+}
+.Ratingssec
+{
+  margin-top:8px;
+  display:flex;
+  padding-left:30px;
+}
+.Ratingssec img
+{
+  width:80px;
+  height:20px; 
+  margin-right:6px;
+}
+.Ratingssec span
+{
+  font-size: 16px;
+  height:20px;
+}
+.pricevalues
+{
+  font-weight: bold;
+  font-size:15px;
+}
+.adbanner button , .adbanner1 button{
+  font-size:1rem;
+  padding:10px;
+  background-color:var(--primary-color);
+  color:var(--font-color);
+  border:none;
+  border-radius:6px;
+  margin-top:10px;
+}
+/* sidenav class */
+.sidebar {
+  height: 100vh; 
+  width: 250px;   
+  background-color: papayawhip; 
+  border: 2px solid red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+  /* .site-header{
+    display:none;
+  }
+  .header-container{
+  width: 480px;
+    position: relative;
+    top:0px;
+    padding:25px;
+  } */
+  /* .footer_part1
+  {
+    flex-wrap: wrap;
+  } */
+  .prt1,.prt2,.prt3
+  {
+    width:80%;
+    margin:0 2.4rem;
+  }
+  .prt1 p{
+    width:60%;
+  }
+  .last_hr
+  {
+    width:94%;
+  }
+  .last{
+    margin-left: 5rem;
+    width :70%;
+    flex-wrap: wrap;
+  }
+  .photos{
+    min-height:100%;
+  }
+  .sixthcontainer button{
+    margin-top:2rem;
+    margin-left:5rem;
+  }
+  .sixthcontainer input{
+    width:100%;
+  }
+  .main-nav,.search-bar,.site-header{
+    display:none;
+  }
+  .header-container
+  {
+    gap:20%;
+    margin-top: auto;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .thirdcontainer{
+    grid-template-columns:100%;
+    width: 90%;
+    margin-left: 1.6rem;
+}
+ .first{
+  grid-row:span 25;
+ }
+ body{
+  overflow-x: hidden;
+ }
+ .box5{width:60%;margin:15%; margin-bottom: 1%;}
+
+.part2{
+  width:100%;
+  margin:0 auto;
+}
+.filter_section
+{
+  flex-direction: column;
+  justify-content: center;
+  height:100px;
+}
+.nav-link{margin-top: 10%;}
+}
+
+@media screen and (max-width:992px){
+.product_page
+{
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  margin-left: 6%;
+}
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .prt1,.prt2,.prt3{
+    width:40%;
+  }
+  .prt1,.prt2{
+    margin-left:3.6rem;
+    margin-right:4rem;
+  }
+  .main-nav
+  {
+    display:none;
+  }
+  body{
+    overflow-x: hidden;
+   }
+}
+
+
+ 

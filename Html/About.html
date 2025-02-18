@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../images/titleicon.png">
+  <link rel="stylesheet" href="../css/About.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/your-path-to-uicons/css/uicons-[your-style].css"> 
+  <title>Document</title>
+</head>
+
+<body>
+    <!-- 1st Start -->
+  <!-- Header Section -->
+  <div class="site-header">
+    <!-- Message Display: This element shows the welcoming message or promotional text -->
+    <span class="site-header__msg" style="flex-shrink: 0;">Welcome to our online Store</span>
+    <!-- Controls Section: Contains 
+      1)language selection dropdown,
+      2)divider, and 
+      3)login/register options -->
+    <div class="site-header__controls">
+      <!-- Language Dropdown: Allows the user to select the language of the website -->
+      <select class="site-header__langdropdown">
+        <option>English</option>
+        <option>French</option>
+        <option>Japnese</option>
+      </select>
+      <!-- Divider: 
+        This visually separates the language dropdown from the login/register option -->
+      <div class="site-header__divider"></div>
+      <!-- Login/Register Option: 
+        This section provides options for the user to login or register -->
+      <a href="#" class="site-header__auth">Login or Register</a>
+    </div>
+  </div>
+  <!--End of the Header Section-->
+  <!-- 1st end -->
+
+  <!-- 2nd start -->
+  <!-- Main container for header-->
+  <div class="header-container" id="home">
+    <!-- Logo Section -->
+     <a href="../Html/index.html">
+    <img class="header_logo" src="../images/Mainlogo.png" alt="title_logo">
+  </a>
+    <!-- Search bar container with dropdown, 
+          input, and
+          button -->
+    <div class="search-bar">
+      <!-- Dropdown for selecting category 
+       (e.g., accessories, clothing, etc.) -->
+      <select class="search-bar__dropdown search-bar-element" name="accessories">
+        <option>accessories</option>
+        <option>clothing</option>
+        <option>teddybear</option>
+        <option>dress</option>
+        <option>new arrivals</option>
+        <option>storage</option>
+      </select>
+      <!-- Divider between dropdown and search input -->
+      <div class="header__divider1"></div>
+      <!-- Search input field for user to type keywords -->
+      <input class="search-bar__input search-bar-element" type="text" placeholder="Search here">
+      <!-- Search button with magnifying glass icon -->
+      <button class="search-bar__button search-bar-element">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+    <!-- Icon group (cart, user, menu) -->
+    <div class="icon-group">
+      <!-- Cart icon with link to the cart page -->
+      <a href="your-page-url-1 url">
+        <i class="fa-solid fa-cart-shopping" id="icon1">
+          <div class="icon-group__icon-square1"></div>
+        </i>
+      </a>
+      <!-- User icon with link to user profile -->
+      <a href="#">
+        <i class="fa-solid fa-user" id="icon2">
+          <div class="icon-group__icon-square2"></div>
+        </i>
+      </a>
+      <!-- Menu icon with link to a menu page -->
+      <a href="your-page-url-3 url">
+        <i class="fa fa-bars" aria-hidden="true" id="icon3">
+          <div class="icon-group__icon-square3"></div>
+        </i>
+      </a>
+    </div>
+  </div>
+  <!-- 2nd end  -->
+<!-- 3rd start -->
+  <!-- 3)navigation bar -->
+  <!-- Main Navigation Bar -->
+  <ul class="main-nav">
+    <!-- All Categories Dropdown Menu -->
+    <li class="category-menu">
+      <!-- Icon for the "All Categories" menu item -->
+      <i class="fa fa-bars" aria-hidden="true" style="padding-right:0.3rem;"></i>
+      <!-- Text for the "All Categories" link -->
+      All Categories
+      <!-- Dropdown menu for the categories -->
+      <ul class="category-dropdown dropdown">
+        <li>New Arrivals</li>
+        <hr class="dropdown-divider"> <!-- Divider between menu items -->
+        <li>Hot Sale</li>
+        <hr class="dropdown-divider">
+        <li>Accessories</li>
+        <hr class="dropdown-divider">
+        <li>Clothing</li>
+        <hr class="dropdown-divider">
+        <li>Backpack</li>
+        <hr class="dropdown-divider">
+        <li>Toys</li>
+        <hr class="dropdown-divider">
+        <li>Car Seat</li>
+        <hr class="dropdown-divider">
+        <li>Jewellery</li>
+      </ul>
+      <!-- Inner box for additional styling or future content -->
+      <div class="category-inner-box">
+      </div>
+    </li>
+
+    <!-- Home Dropdown Menu -->
+    <li class="nav-item">
+      <!-- Link for "Home" with an arrow icon -->
+      <a href="#">Home
+        <i style="font-size:1rem" class="fa">&#xf107;</i>
+      </a>
+      <!-- Dropdown menu for home options -->
+      <ul class="home-dropdown dropdown">
+        <li><a href="../Html/index.html">Home-1</a></li>
+        <li>Home-2</li>
+        <li>Home-3</li>
+      </ul>
+    </li>
+
+    <!-- Shop Dropdown Menu -->
+    <li class="nav-item">
+      <!-- Link for "Shop" with an arrow icon -->
+      <a href="#">Shop
+        <i style="font-size:1rem" class="fa">&#xf107;</i>
+      </a>
+      <!-- Dropdown menu for shop options -->
+      <ul class="shop-dropdown dropdown">
+        <li>Grid FullWidth</li>
+        <li><a href="../Html/Products.html">Grid LeftSidebar</a></li>
+        <li>Grid BannerSlider</li>
+        <li>List</li>
+      </ul>
+    </li>
+
+    <!-- Pages Menu with Mega Menu -->
+    <li class="pages-menu">
+      <!-- Link for "Pages" with an arrow icon -->
+      <a href="#">Pages
+        <i style="font-size:1rem;" class="fa">&#xf107;</i>
+      </a>
+      <!-- Mega Menu for pages -->
+      <div class="mega-menu">
+        <!-- First column of the mega menu -->
+        <ul class="mega-menu-column">
+          <h4>Shopping Cart</h4>
+          <hr class="section-divider"> <!-- Section divider for separation -->
+          <li> Checkout</li>
+          <li>Contact us</li>
+          <li>404</li>
+          <li>Login/Register</li>
+        </ul>
+        <!-- Second column of the mega menu -->
+        <ul class="mega-menu-column1">
+          <h4>Product</h4>
+          <hr class="section-divider">
+          <li><a href="Pages.html">Product Fullwidth</a></li>
+          <li> Product left sidebar</li>
+          <li>Product right sidebar</li>
+        </ul>
+        <!-- Image in the mega menu (for example, a toy image) -->
+        <img src="../images/ToyPicture.png" alt="Toy Image">
+      </div>
+    </li>
+
+    <!-- Blogs Dropdown Menu -->
+    <li class="nav-item">
+      <!-- Link for "Blogs" with an arrow icon -->
+      <a href="#">Blogs
+        <i style="font-size:1rem" class="fa">&#xf107;</i>
+      </a>
+      <!-- Dropdown menu for blogs options -->
+      <ul class="blogs-dropdown dropdown">
+        <li><a href="Blogs.html">Blogs Style</a></li>
+        <li>Post Layout</li>
+      </ul>
+    </li>
+
+    <!-- About Section -->
+    <li class="nav-item"><a href="About.html">About</a></li>
+  </ul>
+  <div class="part1">
+    <span class="item-1 item"><a href="index.html" target="_blank">Home</a></span>
+    <span class="item-2 item"><i class="fa-solid fa-angles-right"></i></span>
+    <span class="item-3 item">About Us</span>
+  </div>
+  <h3 class="abtHeading">ABOUT US</h3>
+  <div class="main_content">
+   <div class="abtustop">
+    <div class="imagediv">
+      <img class="im1" src="../images/Aboutus.jpg">
+    </div>
+    <div class="abtusdescr">
+      <h2 style="  padding-bottom: 20px;">Moorabi's Collection
+        for you</h2>
+        <p>Shop the latest products right from your home with moorabishop.
+           We have supplies, clothing & accessories from top brands.
+        </p>
+        <button class="shop">SHOP NOW</button>
+    </div>
+   </div>
+   <!-- doubt -->
+   <div class="avaliablefacility" style="display:flex;justify-content: space-around;">
+    <div class="pt1">
+    <img src="../images/rocket.svg" alt="rocketIcon" style="width:100px;height:100px;margin-top:40px;margin-bottom: 10px;">
+    <h4>EU Free Delivery</h4>
+    <p style="color:grey;line-height: 25px;">Free Delivery on all order from EU with price more than $90.00</p>
+    </div>
+    <div class="pt1">
+      <img src="../images/reload.png" alt="rocketIcon" style="width:100px;height:100px;margin-top:40px;margin-bottom: 10px;">
+      <h4>Money Guarantee</h4>
+      <p style="color:grey;line-height: 25px;">30 Days money back guarantee no question asked!</p>
+      </div>
+      <div class="pt1">
+        <img src="../images/lock.png" alt="rocketIcon" style="width:100px;height:100px;margin-top:40px;margin-bottom: 10px;">
+        <h4>EU Free Delivery</h4>
+        <p style="color:grey;line-height: 25px;">Free Delivery on all order from EU with price more than $90.00</p>
+        </div>
+   </div>
+   <h2 style="text-align:center">Moorabi's Important Person</h2>
+   <div class="moorabiimportantperson">
+    <div class="person1">
+      <img  class="ceo1" src="../images/1.jpg" alt="">
+      <center>
+      <h4 class="ceoname">MR.CLAUDIO</h4>
+      <span>ceo &founder of moorabi outfit</span>
+      </center>
+    </div>
+    <div class="person1">
+      <img  class="ceo1" src="../images/2.jpg" alt="">
+      <center>
+      <h4 class="ceoname">MR.CLAUDIO</h4>
+      <span>ceo &founder of moorabi outfit</span>
+      </center>
+    </div>
+    <div class="person1">
+      <img  class="ceo1" src="../images/3.jpg" alt="">
+      <center>
+      <h4 class="ceoname">MR.CLAUDIO</h4>
+      <span>ceo &founder of moorabi outfit</span>
+      </center>
+    </div>
+   </div>
+  </div>
+  <footer>
+    <div class="footer_part1">
+      <div class="prt1">
+        <img class="header_logo" src="../images/Mainlogo.png" alt="title_logo">
+        <p style="text-indent: 10px;"><span>c</span>orem ipsum dolor sit amet litam consectetur adipiscing elit,
+          facilisi vivamus proin lit laoreet phasel alilus porttitor inter,
+          facilisis condiment tarime egestas rhoncus dapibus iaculis alemir.
+          Bibendum commodo risus.</p>
+      </div>
+      <ul class="prt2">
+          <h3 style="color:initial;font-family: Baloo,sans-serif;">QUICK MENU</h3>
+        <li><i class="fab fa-reddit"></i> New arrivals</li>
+        <li><i class="fab fa-reddit"></i> Life style</li>
+        <li><i class="fab fa-reddit"></i> Clothing</li>
+        <li><i class="fab fa-reddit"></i> Backpack</li>
+        <li><i class="fab fa-reddit"></i> Toys</li>
+      </ul>
+      <ul class="prt2">
+          <h3 style="color:initial;font-family: Baloo,sans-serif;">QUICK MENU</h3>
+        <li><i class="fab fa-reddit"></i> New arrivals</li>
+        <li><i class="fab fa-reddit"></i> Life style</li>
+        <li><i class="fab fa-reddit"></i> Clothing</li>
+        <li><i class="fab fa-reddit"></i> Backpack</li>
+        <li><i class="fab fa-reddit"></i> Toys</li>
+      </ul>
+      <div class="prt3">
+        <h3 style="color:initial;font-family: Baloo,sans-serif;margin-bottom: 20px;">NEWSLETTER</h3>
+        <span>Get notified of new products, limited releases, and more.</span>
+        <input type="text" placeholder="Your email letter">
+        <button>SUBSCRIBE</button>
+        <div class="icon-group">
+          <!-- Cart icon with link to the cart page -->
+          <a href="your-page-url-1 url">
+            <i class="fa-solid fa-cart-shopping" id="icon1">
+              <div class="icon-group__icon-square1"></div>
+            </i>
+          </a>
+          <!-- User icon with link to user profile -->
+          <a href="your-page-url-2 url">
+            <i class="fa-solid fa-user" id="icon2">
+              <div class="icon-group__icon-square2"></div>
+            </i>
+          </a>
+          <!-- Menu icon with link to a menu page -->
+          <a href="your-page-url-3 url">
+            <i class="fa fa-bars" aria-hidden="true" id="icon3">
+              <div class="icon-group__icon-square3"></div>
+            </i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr class="last_hr">
+    <div class="last">
+
+      <span>Copyright © 2020 Moorabi . All rights reserved</span>
+      <div class="payment_logo">
+        <img src="../images/mastercard-logo.png" class="payment_logo-1 lgo">
+        <img src="../images/paypal_PNG9.png" class="payment_logo-2 lgo">
+        <img src="../images/Visa-Symbol.png" class="payment_logo-3 lgo">
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="../js/About.js"></script>
+</body>
+</html>

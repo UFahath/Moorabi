@@ -1,0 +1,79 @@
+.box5
+{
+  width:25%;
+  height:330px;
+  border:2px dashed rgb(231, 231, 231);
+  text-align: center;
+  transition-duration: 1s;
+}
+.box5:hover{
+  border:2px dashed red;
+  cursor: pointer;
+  transform: rotateY(360deg);
+  color:red;
+  box-shadow: var(--shadow-effect_hover2);
+}
+.box5 span{
+  font-size: 15px;
+  font-weight: bold;
+}
+.circle2_0
+{
+  position:relative;
+  width:50px;
+  height:50px;
+  border:2px solid black;
+  margin:10px;
+  border-radius:29px;
+  background-color:red;
+  color:white;
+  font-size:0.6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle2_1
+{
+  position:absolute;
+  width:40px;
+  height:40px;
+  border:2px dashed black;
+  border-radius:39px;
+}
+.box5 img{
+   width:60%;
+   height:50%;
+}
+.Ratingssec1 img{
+  width: 80px;
+  height:20px;
+}
+.products
+{
+  width:1000px;
+  height:100px;
+  margin:10px;
+  padding-right: 0px;
+  display:flex;
+  flex-wrap: wrap;
+ gap:70px;
+}
+.nav-link{
+  width:30%;
+  height:50px;
+  display:flex;
+  gap:20px;
+  justify-content: center;
+}
+.nav-link a{
+  width:40px;
+  height:40px;
+  border:1px solid rgb(160, 159, 159);
+  display:grid;
+  place-content: center;
+  text-decoration: none;
+  color:grey;
+  border-radius: 5px;
+  background-color: white;
+  cursor:pointer;
+}
