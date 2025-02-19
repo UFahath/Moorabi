@@ -8,7 +8,8 @@ import {timer} from '../js/index.js';
 //   userIcon2.appendChild(signUp);
 //   userIcon2.onclick=auth;
 // });
-
+let pagesdesc=document.querySelector('.dec1 a');
+console.log(pagesdesc);
 let counter=0;
 //quantity counter
 let incrementButton = document.getElementById("Increment");
