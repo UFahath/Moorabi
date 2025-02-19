@@ -502,7 +502,7 @@ if(localStorage.getItem('sideNav')==='open')
 
 
 //offer Timer
-if (window.location.href === "http://127.0.0.1:5500/Moorabi/Html/index.html") {
+if (window.location.href === "https://github.com/UFahath/Moorabi/index.html") {
   let idForTime = 1;
 
   for (let i = 0; i < 4; i++) {
