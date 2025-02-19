@@ -1,4 +1,4 @@
-import{} from "./index.js"
+import{} from "index.js"
 // let silderPosition=0;
 // let images=document.querySelectorAll('.person1');
 // let ne=document.querySelector(".moorabiimportantperson");

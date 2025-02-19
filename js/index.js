@@ -369,7 +369,7 @@ function addToCart(product) {
 }
 
 // eventListener for adding item to the cart
-
+if(window.location.href=="https://github.com/UFahath/Moorabi/index.html"){
   cart0.addEventListener("click", (event) => {
     addToCart(event.target.id);
     event.preventDefault();
@@ -386,6 +386,7 @@ function addToCart(product) {
     addToCart(event.target.id);
     event.preventDefault();
   });
+}
 // <----------------------cart end
 
 //------------------>side navbar

@@ -1,5 +1,5 @@
 // import userIcon from './index.js'
-import {timer} from './index.js';
+import {timer} from 'index.js';
 
 // document.addEventListener('DOMContentLoaded',()=>{
 //   console.log(signUp);

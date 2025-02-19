@@ -1,1 +1,1 @@
-import{} from "./index.js"
+import{} from "index.js"
