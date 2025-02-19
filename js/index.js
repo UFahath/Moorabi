@@ -369,7 +369,7 @@ function addToCart(product) {
 }
 
 // eventListener for adding item to the cart
-if (window.location.href === "https://ufahath.github.io/Moorabi/index.html") {
+
   cart0.addEventListener("click", (event) => {
     addToCart(event.target.id);
     event.preventDefault();
@@ -386,7 +386,6 @@ if (window.location.href === "https://ufahath.github.io/Moorabi/index.html") {
     addToCart(event.target.id);
     event.preventDefault();
   });
-}
 // <----------------------cart end
 
 //------------------>side navbar
@@ -557,10 +556,10 @@ function timer(secs, mins, hrs, days) {
   setInterval(offerDeadline, 1000);
 }
 
-// window.addEventListener("DOMContentLoaded", () => {
-//   console.warn = () => {};
-//   console.clear();
-// });
+window.addEventListener("DOMContentLoaded", () => {
+  console.warn = () => {};
+  console.clear();
+});
 
 
 export { cartMessage, cartPopup, cartMessagediv, timer };
