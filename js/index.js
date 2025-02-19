@@ -369,7 +369,7 @@ function addToCart(product) {
 }
 
 // eventListener for adding item to the cart
-if (window.location.href === "http://127.0.0.1:5500/Moorabi/Html/index.html") {
+if (window.location.href === "https://ufahath.github.io/Moorabi/index.html") {
   cart0.addEventListener("click", (event) => {
     addToCart(event.target.id);
     event.preventDefault();
