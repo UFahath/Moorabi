@@ -64,7 +64,7 @@ console.log(pages[0]);
 let page1=document.querySelector('.page_number-1');
 let page2=document.querySelector('.page_number-2');
 let targetParent=document.querySelector('.part3');
-fetch('https://ufahath.github.io/Moorabi/Productpage2.html').then((response)=>
+fetch('https://ufahath.github.io/Moorabi/main/Productpage2.html').then((response)=>
   {
     if(response.ok)
     {
