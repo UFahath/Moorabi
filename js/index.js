@@ -502,7 +502,7 @@ if(localStorage.getItem('sideNav')==='open')
 
 
 //offer Timer
-if (window.location.href === "https://github.com/UFahath/Moorabi/index.html") {
+
   let idForTime = 1;
 
   for (let i = 0; i < 4; i++) {
@@ -515,7 +515,7 @@ if (window.location.href === "https://github.com/UFahath/Moorabi/index.html") {
     new timer(secs, mins, hrs, days);
     idForTime++;
   }
-}
+
 //template for timer
 function timer(secs, mins, hrs, days) {
   let secsCount = 60;
