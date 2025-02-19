@@ -690,7 +690,7 @@ button:hover{
   color:#DE3C4B;
   border-bottom:4px solid #DE3C4B;
 }
-.dec1 a:focus::after{
+.dec1 a:active ::after{
   content:" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ipsa, iusto consequuntur autem ad ipsum perferendis! Quos minima nam molestias doloribus odio excepturi recusandae delectus corrupti, tempore eius ipsam dolores.";
   position: absolute;
   top:80px;
