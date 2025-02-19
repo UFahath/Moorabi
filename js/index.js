@@ -409,27 +409,27 @@ for (let i = 0; i <= 4; i++) {
   if (navTexts[i] === "HOME") {
     anchortaq.setAttribute(
       "href",
-      "https://ufahath.github.io/Moorabi/index.html"
+      "https://github.com/UFahath/Moorabi/blob/main/index.html"
     );
   } else if (navTexts[i] === "SHOP") {
     anchortaq.setAttribute(
       "href",
-      "https://ufahath.github.io/Moorabi/Products.html"
+      "https://github.com/UFahath/Moorabi/blob/main/Products.html"
     );
   } else if (navTexts[i] === "PAGES") {
     anchortaq.setAttribute(
       "href",
-      "https://ufahath.github.io/Moorabi/Pages.html"
+      "https://github.com/UFahath/Moorabi/blob/main/Pages.html"
     );
   } else if (navTexts[i] === "BLOGS") {
     anchortaq.setAttribute(
       "href",
-      "https://ufahath.github.io/Moorabi/Blogs.html"
+      "https://github.com/UFahath/Moorabi/blob/main/Blogs.html"
     );
   } else if (navTexts[i] === "ABOUT") {
     anchortaq.setAttribute(
       "href",
-      "https://ufahath.github.io/Moorabi/About.html"
+      "https://github.com/UFahath/Moorabi/blob/main/About.html"
     );
   }
 
