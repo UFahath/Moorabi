@@ -1,5 +1,5 @@
 
-import {cartMessage,cartPopup,cartMessagediv}from 'index.js';
+import {cartMessage,cartPopup,cartMessagediv}from '../js/index.js';
 
 
 // let productUserIcon=document.querySelector('#icon2');
