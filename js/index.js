@@ -369,7 +369,7 @@ function addToCart(product) {
 }
 
 // eventListener for adding item to the cart
-if(window.location.pathname==="index.html"){
+if(window.location.pathname==="/index.html"){
   cart0.addEventListener("click", (event) => {
     addToCart(event.target.id);
     event.preventDefault();
