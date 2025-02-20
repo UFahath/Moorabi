@@ -38,8 +38,10 @@ function decrement() {
   }
 }
 
+let timerResources1=document.querySelectorAll('.circle');
 
-
+if(timerResources1.length==3)
+{
 let idTime=1;
 
 for(let i=0;i<3;i++)
@@ -55,4 +57,5 @@ for(let i=0;i<3;i++)
   //timerObject
   new timer(secs,mins,hrs,days);
   idTime++;
+}
 }
