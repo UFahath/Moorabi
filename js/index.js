@@ -502,7 +502,8 @@ if(localStorage.getItem('sideNav')==='open')
 
 
 //offer Timer
-
+  if(window.location.pathname==="index.html")
+  {
   let idForTime = 1;
 
   for (let i = 0; i < 4; i++) {
@@ -515,7 +516,7 @@ if(localStorage.getItem('sideNav')==='open')
     new timer(secs, mins, hrs, days);
     idForTime++;
   }
-
+  }
 //template for timer
 function timer(secs, mins, hrs, days) {
   let secsCount = 60;
