@@ -80,8 +80,11 @@ fetch('Productpage2.html').then((response)=>
       // console.log(pages[1]);
     });
 page1.addEventListener('click',(event)=>{
+  if(productpage1.innerHTML===document.querySelector('.products'))
+  {
       productpage1.innerHTML=pages[0];
       event.preventDefault();
+  }
 });
 page2.addEventListener('click',(event)=>{
   if(productpage1.innerHTML===pages[0])
