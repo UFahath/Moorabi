@@ -1,5 +1,5 @@
 // import userIcon from './index.js'
-import {timer} from '../js/index.js';
+import {cartMessage,timer} from '../js/index.js';
 
 // document.addEventListener('DOMContentLoaded',()=>{
 //   console.log(signUp);
