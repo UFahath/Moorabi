@@ -9,6 +9,15 @@ import {timer} from '../js/index.js';
 //   userIcon2.onclick=auth;
 // });
 
+
+if(sessionStorage.getItem('cartItems'))
+  {
+  const items=JSON.parse(sessionStorage.getItem('cartItems'));
+  cartMessage.remove();
+  cartMessagediv.innerHTML=items;
+  console.log(items);
+  }
+
 let counter=0;
 //quantity counter
 let incrementButton = document.getElementById("Increment");
