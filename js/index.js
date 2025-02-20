@@ -369,7 +369,7 @@ function addToCart(product) {
 }
 
 // eventListener for adding item to the cart
-if(window.location.pathname==="index.html"){
+if(document.documentElement.contains(cart0)&&document.documentElement.contains(cart1)&&document.documentElement.contains(cart2)&&document.documentElement.contains(cart3)){
   cart0.addEventListener("click", (event) => {
     addToCart(event.target.id);
     event.preventDefault();
