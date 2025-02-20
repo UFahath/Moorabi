@@ -23,7 +23,6 @@ import {cartMessage,cartPopup,cartMessagediv}from '../js/index.js';
 if(sessionStorage.getItem('cartItems'))
 {
 const items=JSON.parse(sessionStorage.getItem('cartItems'));
-cartMessage.remove();
 cartMessagediv.innerHTML=items;
 console.log(items);
 }
@@ -85,10 +84,14 @@ page1.addEventListener('click',(event)=>{
       event.preventDefault();
 });
 page2.addEventListener('click',(event)=>{
+  if(productpage1.innerHTML===pages[0])
+  {
+      productpage1.innerHTML=null;
       productpage1.innerHTML=pages[1];
       console.log("after replaceing...");
       // console.log(pages[1]);
       event.preventDefault();
+  }
 });
 page1.style.backgroundColor="#A52A2A";
 // console.log("------1-------");
