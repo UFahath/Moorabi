@@ -377,7 +377,10 @@ body {
   background-color: white; /* Set background color */
   z-index: 1; /* Bring the hovered menu to the front */
 }
-
+.mega-menu-column1 a:hover{
+  color:white;
+  background-color: grey;
+}
 .part1{
   height:70px;
   width:76%;
