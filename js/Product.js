@@ -1,5 +1,5 @@
 
-import {cartMessage,cartPopup,cartMessagediv}from '../js/index.js';
+import {subTotal,subTotalValue,cartMessage,cartPopup,cartMessagediv}from '../js/index.js';
 
 
 // let productUserIcon=document.querySelector('#icon2');
@@ -20,10 +20,12 @@ import {cartMessage,cartPopup,cartMessagediv}from '../js/index.js';
 
 // console.log('secondpage');
 
-if(sessionStorage.getItem('cartItems'))
+if(sessionStorage.getItem('cartItems')&&sessionStorage.getItem('subtotal'))
 {
 const items=JSON.parse(sessionStorage.getItem('cartItems'));
+const rate=JSON.parse(sessionStorage.getItem('subtotal'));
 cartMessagediv.innerHTML=items;
+subTotal.innerText=rate;
 console.log(items);
 }
 
@@ -80,20 +82,14 @@ fetch('Productpage2.html').then((response)=>
       // console.log(pages[1]);
     });
 page1.addEventListener('click',(event)=>{
-  if(productpage1.innerHTML===document.querySelector('.products'))
-  {
       productpage1.innerHTML=pages[0];
       event.preventDefault();
-  }
 });
 page2.addEventListener('click',(event)=>{
-  if(productpage1.innerHTML===pages[0])
-  {   productpage1.style.zIndex=-1;
       productpage1.innerHTML=pages[1];
       console.log("after replaceing...");
       // console.log(pages[1]);
       event.preventDefault();
-  }
 });
 page1.style.backgroundColor="#A52A2A";
 // console.log("------1-------");

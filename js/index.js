@@ -565,5 +565,5 @@ function timer(secs, mins, hrs, days) {
 // });
 
 
-export { cartMessage, cartPopup, cartMessagediv, timer };
+export { cartMessage, cartPopup, cartMessagediv,subTotal,subTotalValue, timer };
 // export {userIcon2,auth};
