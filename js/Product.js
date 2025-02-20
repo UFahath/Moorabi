@@ -88,8 +88,7 @@ page1.addEventListener('click',(event)=>{
 });
 page2.addEventListener('click',(event)=>{
   if(productpage1.innerHTML===pages[0])
-  {
-      productpage1.innerHTML=null;
+  {   productpage1.style.zIndex=-1;
       productpage1.innerHTML=pages[1];
       console.log("after replaceing...");
       // console.log(pages[1]);
