@@ -500,9 +500,10 @@ if(localStorage.getItem('sideNav')==='open')
     });
 }
 
+let timerResources=document.querySelectorAll('.circle');
 
 //offer Timer
-  if(window.location.pathname==="index.html")
+  if(timerResources.length===4)
   {
   let idForTime = 1;
 
