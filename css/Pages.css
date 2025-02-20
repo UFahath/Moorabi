@@ -377,10 +377,7 @@ body {
   background-color: white; /* Set background color */
   z-index: 1; /* Bring the hovered menu to the front */
 }
-.mega-menu-column1 a:hover{
-  color:white;
-  background-color: grey;
-}
+
 .part1{
   height:70px;
   width:76%;
@@ -1183,6 +1180,10 @@ footer button:hover
   border:none;
   border-radius:6px;
   margin-top:10px;
+}
+.mega-menu-column1 a:hover{
+  color:white;
+  background-color: grey;
 }
 @media screen and (min-width:320px) and (max-width:768px) {
   .dec1 a::after{
