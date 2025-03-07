@@ -84,11 +84,6 @@ fetch('Productpage2.html').then((response)=>
 page1.addEventListener('click',(event)=>{
       productpage1.innerHTML=pages[0];
       event.preventDefault();
-      page2.removeEventListener('click',(event)=>{
-        productpage1.innerHTML=pages[1];
-        console.log("after replaceing...");
-        event.preventDefault();
-  });
 });
 page2.addEventListener('click',(event)=>{
       productpage1.innerHTML=pages[1];
