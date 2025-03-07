@@ -567,10 +567,10 @@ function timer(secs, mins, hrs, days) {
   setInterval(offerDeadline, 1000);
 }
 
-window.addEventListener("DOMContentLoaded", () => {
-  console.warn = () => {};
-  console.clear();
-});
+// window.addEventListener("DOMContentLoaded", () => {
+//   console.warn = () => {};
+//   console.clear();
+// });
 
 
 export { cartMessage, cartPopup, cartMessagediv,subTotal,subTotalValue, timer };
