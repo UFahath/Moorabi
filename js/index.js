@@ -567,7 +567,7 @@ function timer(secs, mins, hrs, days) {
   setInterval(offerDeadline, 1000);
 }
 
-window.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("contextmenu",(event)=>{
     event.preventDefault();
   });
