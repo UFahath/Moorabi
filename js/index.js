@@ -568,6 +568,9 @@ function timer(secs, mins, hrs, days) {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
+  window.addEventListener("contextmenu",(event)=>{
+    event.preventDefault();
+  });
   console.warn = () => {};
   console.clear();
 });
